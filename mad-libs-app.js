@@ -16,14 +16,14 @@ let questionArray = [
     `${constString} person's name`,
     `${constString}n adjective`,
     `${constString} feeling`,
-    `${constString} feeling`,
+    `${constString} another feeling`,
     `${constString} noun`,
     `${constString} type of exercise`,
     `${constString} food`,
-    `${constString} food`,
+    `${constString} another food`,
     `${constString} color`,
     `${constString} country`,
-    `${constString}n adjective`,
+    `${constString} another adjective`,
     `${constString} preferred school`,  
 ]
 
@@ -41,16 +41,11 @@ let userInputs = [];
 
 //looping over the questions
 for (let i = numberOfQuestions - 1; i>=0; i--){
-    console.log(questionArray[questionCounter] + ` (${numberOfQuestions} questions left)`);
+    userInputs.push(prompt(questionArray[questionCounter] + `... (${numberOfQuestions} questions left)`));   
+    console.log(userInputs); 
     questionCounter++;
     numberOfQuestions--;
 }
-
-
-
-
-
-
 
 
 
@@ -65,4 +60,12 @@ else pops into my head! After explaining this, I quickly saw my friend's mood sh
 did you learn all these coping strategies?" To which I replied, "From the ${userInputs[11]} team at ${userInputs[12]}."`;
 
 
+//Notifying the user
+alert('All done! Ready for your mad story??!');
+
+
+
+
+
+//The output
 console.log(originalStory);

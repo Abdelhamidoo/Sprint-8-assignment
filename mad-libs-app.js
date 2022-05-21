@@ -14,7 +14,7 @@ let constString = "Enter a"
 let questionArray = [
     `${constString} place`,
     `${constString} person's name`,
-    `${constString} adjective`,
+    `${constString}n adjective`,
     `${constString} feeling`,
     `${constString} feeling`,
     `${constString} noun`,
@@ -23,7 +23,7 @@ let questionArray = [
     `${constString} food`,
     `${constString} color`,
     `${constString} country`,
-    `${constString} adjective`,
+    `${constString}n adjective`,
     `${constString} preferred school`,  
 ]
 
@@ -41,7 +41,7 @@ let userInputs = [];
 
 //looping over the questions
 for (let i = numberOfQuestions - 1; i>=0; i--){
-    console.log(questionCounter);
+    console.log(questionArray[questionCounter]);
     questionCounter++
 }
 

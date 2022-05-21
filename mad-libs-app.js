@@ -30,7 +30,11 @@ let userInputs = [];
 
 //looping over the questions
 for (let i = numberOfQuestions - 1; i>=0; i--){
-    userInputs.push(prompt(questionArray[questionCounter] + `... (${numberOfQuestions} questions left)`));   
+    let userInput = prompt(questionArray[questionCounter] + `... (${numberOfQuestions} questions left)`);
+    if (userInput.trim() === ""){
+        console.log("the user didn't write anything");
+    }
+    userInputs.push(userInput);   
     console.log(userInputs); 
     questionCounter++;
     numberOfQuestions--;

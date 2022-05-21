@@ -1,6 +1,13 @@
 "use strict";
 
 
+
+//The total number of questions
+let numberOfQuestions = 13;
+
+
+
+
 //It stores the user's inputs
 let userInputs = [];
 

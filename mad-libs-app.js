@@ -5,11 +5,50 @@
 //The total number of questions
 let numberOfQuestions = 13;
 
+//Questions counter 
+let questionCounter = 0;
+
+
+//The set of questions
+let constString = "Enter a"
+let questionArray = [
+    `${constString} place`,
+    `${constString} person's name`,
+    `${constString} adjective`,
+    `${constString} feeling`,
+    `${constString} feeling`,
+    `${constString} noun`,
+    `${constString} type of exercise`,
+    `${constString} food`,
+    `${constString} food`,
+    `${constString} color`,
+    `${constString} country`,
+    `${constString} adjective`,
+    `${constString} preferred school`,  
+]
+
+
+
+
+
+
 
 
 
 //It stores the user's inputs
 let userInputs = [];
+
+
+//looping over the questions
+for (let i = numberOfQuestions - 1; i>=0; i--){
+    console.log(questionCounter);
+    questionCounter++
+}
+
+
+
+
+
 
 
 
